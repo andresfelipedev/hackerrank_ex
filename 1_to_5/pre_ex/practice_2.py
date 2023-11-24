@@ -28,15 +28,40 @@ def getting_keys(ch):
         contador += 1
         print(f' {contador}) {key}')
 
+def create(arr, key, value):
+    arr[key] = value
+
+def edit(arr, key, value):
+    arr[key] = value
+"""
+def read(arr, key, value):
+    print(f'{arr[key]}: {arr[value]}')
+"""
+
+def delete(arr, key):
+    del arr[key]
+
+
+
+def choosing_method():
+    pass 
+
 def actions(add_dic):
     print(' 1) Crear.\n 2) Editar.\n 3) Leer.\n 4) Borrar.')
+
     person_action = int(input('\nPon la accion que quieres hacer: \n'))
+
     print_second(person_action)
     getting_keys(add_dic)
+
     second_per_act = int(input('\nPon la accion que quieres hacer: \n'))
+
     
 
-actions(first_dic)
+
+    
+
+#actions(first_dic)
 
 
 """
