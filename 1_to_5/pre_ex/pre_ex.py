@@ -52,9 +52,9 @@ matriz_3x3 = [
 
 arr_0 = []
 
-new_m = [arr_0[matriz_3x3[j][i], len(matriz_3x3[i][j])]  for i in range(len(matriz_3x3)) for j in range(len(matriz_3x3[i]))]
+new_m = [matriz_3x3[j][i] for i in range(len(matriz_3x3)) for j in range(len(matriz_3x3[i]))]
 
-
+new_m[0:-1:len(matriz_3x3[0])]
 
 
 print(new_m)
