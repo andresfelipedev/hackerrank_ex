@@ -14,13 +14,24 @@ real_arr = [["Harry",37.21],["Berry",37.21],["Tina",37.2],["Akriti",41],["Harsh"
 #####
 
 
-
 def doing_array(arr):
-    order_arr = sorted(arr, key = lambda x: (x[1], x[0]))
+    order_arr = sorted(arr, key = lambda x: x[1])
+##
     print(order_arr)
-    for item in range(len(order_arr)):
-        if item <= 1:
-            print(order_arr[item][0])
+##
+    looking_for = order_arr[1][1]
+    getting_same = [student_data[0] for student_data in order_arr for value in student_data if value == looking_for]
+
+    diference_ = sorted(getting_same, reverse=False)
+
+
+
+    for i in range(len(getting_same)):
+        print(diference_[i])
+
+
+
+
 
 doing_array(real_arr)
 
