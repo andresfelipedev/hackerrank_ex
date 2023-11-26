@@ -43,8 +43,10 @@ def delete(arr, key):
 
 
 
-def choosing_method():
-    pass 
+def choosing_method(array_1, key_1):
+    pass
+     
+    
 
 def actions(add_dic):
     print(' 1) Crear.\n 2) Editar.\n 3) Leer.\n 4) Borrar.')
@@ -56,12 +58,16 @@ def actions(add_dic):
 
     second_per_act = int(input('\nPon la accion que quieres hacer: \n'))
 
+    delete(first_dic, 'age')
+
+    print(first_dic)
+
     
 
 
     
 
-#actions(first_dic)
+actions(first_dic)
 
 
 """
