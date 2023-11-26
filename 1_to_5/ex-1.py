@@ -1,15 +1,25 @@
-#x = int(input(f'Pon la x: '))
-#y = int(input(f'Pon la y: '))
-#z = int(input(f'Pon la z: '))
-#n = int(input(f'Pon la n: '))
-    
+"""
 
-list_1 = [1,2,3]
+Given the participants' score sheet for your University Sports Day, 
+you are required to find the runner-up score. You are given  scores. 
+Store them in a list and find the score of the runner-up.
+
+"""
+
+n = 5
+arr = [34,34,36,6,39,25,76,34,34]
+
+doing_each = set(arr)
+
+doing_arr_again = list(doing_each)
+
+doing_arr_again.sort(reverse=True)
+
+second = doing_arr_again[1]
 
 
 
+print(doing_arr_again)
+print(second)
 
 
-new_m = [list_1[:i] + list_1[i + 1:] + [list_1[i]] for i in range(len(list_1)) for i in range(len(list_1))]
-
-print(new_m)
