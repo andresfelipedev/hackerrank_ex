@@ -9,17 +9,16 @@ Store them in a list and find the score of the runner-up.
 n = 5
 arr = [34,34,36,6,39,25,76,34,34]
 
-doing_each = set(arr)
+arr.sort(reverse=True)
 
-doing_arr_again = list(doing_each)
+unique_elements = sorted(set(arr), reverse=True)
 
-doing_arr_again.sort(reverse=True)
+if len(unique_elements) > 1:
+    second = unique_elements[1]
+    print(second)
+else:
+    print("No hay segundo elemento unico")
 
-second = doing_arr_again[1]
-
-
-
-print(doing_arr_again)
 print(second)
 
 
