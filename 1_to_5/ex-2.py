@@ -7,6 +7,8 @@ Note: If there are multiple students with the second lowest grade,
 order their names alphabetically and print each name on a new line.
 
 """
+
+"""
 ##### array real
 real_arr = [["Harry",37.21],["Berry",37.21],["Tina",37.2],["Akriti",41],["Harsh",39]]
 
@@ -35,7 +37,6 @@ def doing_array(arr):
 
 doing_array(real_arr)
 
-"""
 def main():
     students_and_grades = []
     for i in range(0,3):
@@ -52,3 +53,25 @@ def main():
 
 main()
 """
+
+
+
+######################## Doing another:
+
+
+if __name__ == '__main__':
+    l=[]
+    s=[]
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        
+        l.append([name, score])
+        s.append(score)
+        
+    rearr_s = sorted(list(set(s)))[1] #---> second lowest value lies at arr position of '1'
+    
+        
+    for i,j in sorted(l):
+        if j == rearr_s:
+            print(i)
